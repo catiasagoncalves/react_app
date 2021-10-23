@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherSearch from "./WeatherSearch";
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
@@ -7,12 +7,11 @@ export default function App() {
     <div className="App">
     <div className="container">
 
-      <h1>Weather Search Engine</h1>
-      <WeatherSearch />
+          <Weather />
       <footer>
-        this project was coded by Cátia Gonçalves and is open-sourced
-       <a href="https://github.com/catiasagoncalves/react_app" target="_blank" rel="noreferrer">    </a>
-       hosted in Netlify!
+  Project coded by Cátia Gonçalves and is 
+       <a href="https://github.com/catiasagoncalves/react_app" target="_blank" rel="noreferrer"> open-sourced on GitHub </a>
+      
      </footer>
     </div>
     </div>

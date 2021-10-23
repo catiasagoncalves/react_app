@@ -3,16 +3,6 @@ import "./Weather.css";
 
 
 export default function Weather() {
-  let weatherData = {
-    city: "Luxembourg",
-    time: "Sunday, at 14:00",
-    description: "Clear",
-    temperature: 17,
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-    feel: 18,
-    humidity: 63,
-    wind: 4
-  };
   return (
     <div className="Weather">
       <form className="mb-4">
@@ -28,32 +18,26 @@ export default function Weather() {
           <div className="col-3">
             <input type="submit" value="Search" className="btn btn-primary" />
           </div>
-        </div>
-      </form>
-      <div className="overview-location">
-        <h1> {weatherData.city}</h1>
-        <ul>
-          {" "}
-          <li> Last update: {weatherData.time} </li>
-          <li> {weatherData.description} </li>
-        </ul>
-      </div>
-      <div className="row">
-        <div className="col-6">
-          <div className="weather-temperature">
-            <img src={weatherData.imgUrl} alt={weatherData.description} />
-            <strong> {weatherData.temperature}</strong>
-            <span className="temperature-units"> ºC </span>
           </div>
-        </div>
-        <div className="col-6">
-          <ul>
-            <li>Real feel: {weatherData.feel}ºC </li>
-            <li> Humidity: {weatherData.humidity}% </li>
-            <li> wind: {weatherData.wind}km/h </li>
-          </ul>
-        </div>
-      </div>
+        </form>
+      <h1> Luxembourg</h1>
+      <ul>
+        <li>Wednesday 07:00</li>
+        <li> Mostly Cloudy</li>
+      </ul>
+<div className="row">
+  <div className="col-6">
+    <img src="http://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="mostly cloudy"/>
+    º6C
+    </div> 
+    <div className="col-6">
+<ul>
+  <li>Reall feel: 16ºC</li>
+  <li>Humidity: 72%</li>
+  <li>Wind: 10 km/h</li>
+</ul>
+    </div>
+</div>
     </div>
   );
 }
